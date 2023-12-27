@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TemperatureConverter</string>
+    <string-array name="temperature_units">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>
+
+

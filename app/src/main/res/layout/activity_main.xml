@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputTemperature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter temperature"/>
+
+    <TextView
+        android:id="@+id/labelConvertFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert From"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/inputTemperature"
+        android:layout_marginTop="8dp"/>
+
+    <Spinner
+        android:id="@+id/fromSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelConvertFrom"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/labelConvertTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert To"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/fromSpinner"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/toSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelConvertTo"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/resultText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toSpinner"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+</RelativeLayout>
